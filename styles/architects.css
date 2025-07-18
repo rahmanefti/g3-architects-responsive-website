@@ -182,6 +182,7 @@ section{
 
 .some-facts-description{
    max-width: 540px;
+   font-size: 1rem;
 }
 
 /* Responsive media query */
@@ -191,11 +192,24 @@ section{
    .teams{
       flex-direction: column;
    }
-   .team-img-container{
+   .team-img-container,
+   .fact-container{
       grid-template-columns: repeat(1, 1fr);
+      
+   }
+   .fact-container{
+      justify-items: center;
+      gap: 24px;
    }
    .team-content{
       margin-left: 10px;
+   }
+   .some-facts-title{
+      text-align: center;  
+   }
+   .some-facts-description{
+      font-size: 1rem;
+      text-align: center;
    }
 }
 @media  screen and (min-width: 576px) and (max-width: 992px) {
