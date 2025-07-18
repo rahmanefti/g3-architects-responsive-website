@@ -140,6 +140,52 @@ section{
 }
 
 
+/* Features style */
+.features{
+   display: flex;
+   gap: 150px;
+}
+.features-content-title{
+   font-size: 2.8rem;
+   font-weight: 700;
+
+   border-left: 4px solid #FF900E;
+   padding-left: 24px;
+}
+.features-content-description{
+   color: #737373;
+}
+.features-card{
+   padding: 30px 42px 30px 30px;
+   margin-bottom: 20px;
+   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.06);
+   border-radius: 8px;
+}
+.features-card-title{
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+#experience-badge{
+   background-color: #FF900E;
+   color: #ffffff;
+   font-weight: 500;
+   font-size: 1.5rem;
+   padding: 45px 42px;
+   border-radius: 8px;
+   border: none;
+
+   margin-left: -100px;
+   margin-top: -200px;
+   
+}
+#experience-years{
+   font-weight: 700;
+   font-size: 4rem;
+}
+
+
 /* Some Facts styles */
 .some-facts-title{
    margin-top: 0px;
@@ -185,6 +231,30 @@ section{
    font-size: 1rem;
 }
 
+/* Our sponsors style */
+.sponsors-content{
+   max-width: 542px;
+   text-align: center;
+   margin: 50px auto 32px auto;
+}
+
+.sponsors-title{
+   font-size: 2.8rem;
+   font-weight: 700;
+   margin-bottom: 24px;
+}
+.sponsors-description{
+   margin-top: 0px;
+   margin-bottom: 32px;
+}
+.company{
+   filter: grayscale(100%);
+}
+.company-container{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+}
+
 /* Responsive media query */
 @media screen and (max-width:576px) {
    .navbar, 
@@ -211,7 +281,32 @@ section{
       font-size: 1rem;
       text-align: center;
    }
-}
+   .company-container{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 44px;
+      justify-items: center;
+   }
+   .sponsors-content{
+      width: 100%;
+   }
+   .features{
+      flex-direction: column;
+   }
+   .features-architect{
+      width: 100%;
+   }
+   #experience-badge{
+      background-color: #FF900E;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 1.5rem;
+      padding: 24px 20px;
+      border-radius: 8px;
+      border: none;
+
+      margin-left: 20px;
+      margin-top: 20px;
+   }
 @media  screen and (min-width: 576px) and (max-width: 992px) {
    .teams{
       flex-direction: column;
